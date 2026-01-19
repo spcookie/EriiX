@@ -1,6 +1,6 @@
 <div align="center">
 
-# Erii
+# EriiX
 
 **一个具有情感、记忆、心流和主动行为的 AI 群聊机器人**
 
@@ -10,7 +10,7 @@
 [![H2](https://img.shields.io/badge/H2-Database-0066CC?style=for-the-badge)](https://www.h2database.com/)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
-[Features](#features) • [Tech Stack](#tech-stack) • [Getting Started](#getting-started) • [Building & Running](#building--running) • [Documentation](#documentation)
+[Features](#features) • [Tech Stack](#tech-stack) • [Getting Started](#getting-started) • [Building & Running](#building--running)
 
 </div>
 
@@ -18,7 +18,7 @@
 
 ## Overview
 
-Erii 是一个基于多维心理模型的 AI 群聊机器人系统。不同于传统的问答机器人，Erii 拥有**情绪系统**、**长期记忆**、**对话心流**和
+EriiX 是一个基于多维心理模型的 AI 群聊机器人系统。不同于传统的问答机器人，EriiX 拥有**情绪系统**、**长期记忆**、**对话心流**和
 **主动行为**，能够像真人一样参与群聊对话，主动插话、破冰，并根据情绪状态调整说话风格。
 
 **核心特性：**
@@ -60,7 +60,7 @@ Erii 是一个基于多维心理模型的 AI 群聊机器人系统。不同于�
 
 ### 核心系统
 
-<table>
+<table align="center">
 <tr>
 <td width="50%" valign="top">
 
@@ -171,8 +171,8 @@ Erii 是一个基于多维心理模型的 AI 群聊机器人系统。不同于�
 
 1. **克隆仓库**
    ```bash
-   git clone <repository-url>
-   cd Erii
+   git clone https://github.com/spcookie/EriiX.git
+   cd EriiX
    ```
 
 2. **配置环境变量**
@@ -231,7 +231,7 @@ Erii 是一个基于多维心理模型的 AI 群聊机器人系统。不同于�
 
 ### 配置 NapCat
 
-Erii 使用 NapCat 作为 QQ 接入层，请参考 [NapCat 官方文档](https://github.com/NapNeko/NapCatQQ) 进行配置：
+EriiX 使用 NapCat 作为 QQ 接入层，请参考 [NapCat 官方文档](https://github.com/NapNeko/NapCatQQ) 进行配置：
 
 1. 启动 NapCat 服务
 2. 在 NapCat 配置中启用 **WebSocket 正向连接** (默认端口 3001)
@@ -289,7 +289,7 @@ docker-compose up -d
 ## Project Structure
 
 ```
-Erii/
+EriiX/
 ├── src/
 │   ├── main/
 │   │   ├── kotlin/
@@ -309,19 +309,6 @@ Erii/
 └── README.md                      # 本文件
 ```
 
-## Documentation
-
-### 系统设计文档
-
-详细的系统设计文档位于 `doc/` 目录：
-
-- **[emotion.md](doc/emotion.md)** - 情绪系统：PAD 三维模型、情绪计算引擎、表现层映射
-- **[memory.md](doc/memory.md)** - 记忆系统：多维度记忆、作用域隔离、RAG 检索
-- **[flow.md](doc/flow.md)** - 心流系统：投入度计算、状态分层、专注机制
-- **[volition.md](doc/volition.md)** - 主动行为系统：冲动值计算、三大主动模式、抑制机制
-- **[evolution.md](doc/evolution.md)** - 进化系统：词汇学习和群聊梗记忆
-- **[meme.md](doc/meme.md)** - 梗文化：群聊用语识别和使用
-
 ### 技术参考
 
 - [Kotlin 官方文档](https://kotlinlang.org/docs/home.html) - Kotlin 语言指南
@@ -334,7 +321,7 @@ Erii/
 
 ### 架构说明
 
-Erii 采用事件驱动架构，通过 `EventBus` 实现系统间解耦。核心工作流程：
+EriiX 采用事件驱动架构，通过 `EventBus` 实现系统间解耦。核心工作流程：
 
 1. **消息接收** → Mirai Overflow 接收 QQ 消息
 2. **历史记录** → HistoryService 保存到数据库
