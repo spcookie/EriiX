@@ -195,7 +195,7 @@ EriiX 是一个基于多维心理模型的 AI 群聊机器人系统。不同于�
    NAPCAT_TOKEN=your_napcat_token
    
    # 调试群组 ID（可选，开发模式下仅响应此群）
-   DEBUG_GROUP_ID=
+   #DEBUG_GROUP_ID=
    
    # 启用的群组列表（必填，多个群组用逗号分隔）
    ENABLE_GROUPS=1053148332,474270623
