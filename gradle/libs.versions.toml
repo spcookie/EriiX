@@ -1,11 +1,13 @@
 [versions]
-exposed = "1.0.0-rc-3"
+overflow = "1.0.8"
+exposed = "1.1.1"
 hikari = '4.0.3'
 h2 = "2.3.232"
 koin = "4.1.2-Beta1"
 kotlin = "2.2.21"
+kotlinx-coroutines = "1.9.0"
 ktor = "3.3.2"
-koog = "0.6.3"
+koog = "0.7.2"
 jobrunr = '8.3.1'
 logback = "1.4.14"
 caffeine = "3.1.8"
@@ -19,11 +21,18 @@ arrow = "2.0.0"
 lucene = "9.12.3"
 lucene-analyzers = "8.11.4"
 clikt = "5.1.0"
+okio = "3.6.0"
 hutool = "5.8.26"
 jte = "3.2.1"
+lunar = "1.7.5"
+typesafe = "1.4.0"
+snakeyaml = "2.2"
+pf4j = "3.15.0"
+kotlin-logging = "7.0.13"
 
 [libraries]
-mirai-overflow = { module = "top.mrxiaom.mirai:overflow-core", version = "1.0.8" }
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinx-coroutines" }
+mirai-overflow = { module = "top.mrxiaom.mirai:overflow-core", version.ref = "overflow" }
 jobrunr = { module = "org.jobrunr:jobrunr", version.ref = "jobrunr" }
 koog-agents = { module = "ai.koog:koog-agents", version.ref = "koog" }
 ktor-server-core = { module = "io.ktor:ktor-server-core", version.ref = "ktor" }
@@ -62,6 +71,7 @@ mapdb = { module = "org.mapdb:mapdb", version.ref = "mapdb" }
 logback-classic = { module = "ch.qos.logback:logback-classic", version.ref = "logback" }
 caffeine = { module = "com.github.ben-manes.caffeine:caffeine", version.ref = "caffeine" }
 clikt = { module = "com.github.ajalt.clikt:clikt", version.ref = "clikt" }
+okio = { module = "com.squareup.okio:okio-jvm", version.ref = "okio" }
 hutool-core = { module = "cn.hutool:hutool-core", version.ref = "hutool" }
 autoservice-annotations = { module = "com.google.auto.service:auto-service-annotations", version.ref = "autoservice" }
 autoservice-processor = { module = "com.google.auto.service:auto-service", version.ref = "autoservice" }
@@ -72,10 +82,15 @@ arrow-core = { group = "io.arrow-kt", name = "arrow-core", version.ref = "arrow"
 lucene-core = { module = "org.apache.lucene:lucene-core", version.ref = "lucene" }
 lucene-analyzers-common = { module = "org.apache.lucene:lucene-analyzers-common", version.ref = "lucene-analyzers" }
 jte-kotlin = { module = "gg.jte:jte-kotlin", version.ref = "jte" }
+pf4j = { module = "org.pf4j:pf4j", version.ref = "pf4j" }
+lunar = { module = "cn.6tail:lunar", version.ref = "lunar" }
+kotlin-logging = { module = "io.github.oshai:kotlin-logging-jvm", version.ref = "kotlin-logging" }
 flexmark-html2md = { module = "com.vladsch.flexmark:flexmark-html2md-converter", version.ref = "flexmark" }
 flexmark-ext-tables = { module = "com.vladsch.flexmark:flexmark-ext-tables", version.ref = "flexmark" }
 ktor-server-test-host = { module = "io.ktor:ktor-server-test-host", version.ref = "ktor" }
 kotlin-test-junit = { module = "org.jetbrains.kotlin:kotlin-test-junit", version.ref = "kotlin" }
+typesafe-config = { module = "com.typesafe:config", version.ref = "typesafe" }
+snakeyaml = { module = "org.yaml:snakeyaml", version.ref = "snakeyaml" }
 
 [plugins]
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
