@@ -1,4 +1,4 @@
-rootProject.name = "erii"
+rootProject.name = "EriiX"
 
 dependencyResolutionManagement {
     repositories {
